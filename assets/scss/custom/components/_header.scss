@@ -1,2 +1,45 @@
-header{}
+header{
+    width: 100%;
+    .header-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: em(35) em(115);
+        width: 100%;
+        align-items: center;
+        .logo-container {
+
+            .logo-wrapper{
+                max-width: em(186);
+                height: em(32);
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .nav-container {
+            .nav-wrapper{
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    width: 100%;
+                    li {
+                        list-style: none;
+                        margin-right: em(50);
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                        &:last-child(){
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .btn-login-container{
+
+        }
+    }
+}
 

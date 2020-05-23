@@ -40,9 +40,10 @@ p {
     font-family: $font;
 }
 
-button {
+a {
     @include textStyle($black ,18, 0, 23, bold );
     font-family: $font;
+    text-decoration: none;
 }
 
 button {

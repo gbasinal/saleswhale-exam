@@ -401,7 +401,6 @@ b, strong {
 
 body {
   font-size: 1.25vw;
-  background-color: #000;
   margin: 0;
 }
 @media only screen and (max-width: 1024px) {
@@ -415,10 +414,11 @@ body {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
 }
 
 h1 {
-  color: #0688FA;
+  color: #002240;
   font-size: 3.2222222222em;
   letter-spacing: 0em;
   line-height: 1.0689655172;
@@ -427,7 +427,7 @@ h1 {
 }
 
 h2 {
-  color: #0688FA;
+  color: #002240;
   font-size: 3.2222222222em;
   letter-spacing: 0em;
   line-height: 1.0689655172;
@@ -437,7 +437,7 @@ h2 {
 }
 
 h3 {
-  color: #0688FA;
+  color: #002240;
   font-size: 1.7777777778em;
   letter-spacing: 0em;
   line-height: 1.0625;
@@ -446,7 +446,7 @@ h3 {
 }
 
 h4 {
-  color: #0688FA;
+  color: #002240;
   font-size: 1.4444444444em;
   letter-spacing: 0em;
   line-height: 1.3076923077;
@@ -456,7 +456,7 @@ h4 {
 }
 
 h5 {
-  color: #0688FA;
+  color: #002240;
   font-size: 1.1666666667em;
   letter-spacing: 0em;
   line-height: 1.8095238095;
@@ -466,7 +466,7 @@ h5 {
 }
 
 h6 {
-  color: #0688FA;
+  color: #002240;
   font-size: 1.1666666667em;
   letter-spacing: 0em;
   line-height: 1.619047619;
@@ -475,7 +475,7 @@ h6 {
 }
 
 p {
-  color: #0688FA;
+  color: #002240;
   font-size: 1em;
   letter-spacing: 0em;
   line-height: 1.7777777778;
@@ -483,13 +483,14 @@ p {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-button {
-  color: #0688FA;
+a {
+  color: #002240;
   font-size: 1em;
   letter-spacing: 0em;
   line-height: 1.2777777778;
   font-weight: bold;
   font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
 }
 
 button {
@@ -499,5 +500,40 @@ button {
   line-height: 1.2777777778;
   font-weight: bold;
   font-family: "Source Sans Pro", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+header .header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.9444444444em 6.3888888889em;
+  width: 100%;
+  align-items: center;
+}
+header .header-wrapper .logo-container .logo-wrapper {
+  max-width: 10.3333333333em;
+  height: 1.7777777778em;
+}
+header .header-wrapper .logo-container .logo-wrapper img {
+  width: 100%;
+}
+header .header-wrapper .nav-container .nav-wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+header .header-wrapper .nav-container .nav-wrapper ul li {
+  list-style: none;
+  margin-right: 2.7777777778em;
+}
+header .header-wrapper .nav-container .nav-wrapper ul li:hover {
+  text-decoration: underline;
+}
+header .header-wrapper .nav-container .nav-wrapper ul li:last-child() {
+  margin-right: 0;
 }
 /*# sourceMappingURL=build.css.map */

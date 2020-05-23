@@ -6,7 +6,7 @@ b, strong {
 
 body {
     font-size: 1.250vw;
-    background-color: #000;
+    
     margin: 0;
     @media only screen and (max-width: 1024px){
         font-size: 18px;
@@ -17,5 +17,7 @@ body {
     outline: none !important;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
 }
+
