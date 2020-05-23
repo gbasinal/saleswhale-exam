@@ -9,13 +9,19 @@ header{
         @media only screen and (max-width: 991px){
             padding: em(26) em(70);
         }
+        @media only screen and (max-width: 767px){
+            padding: em(18) em(26);
+        }
         .logo-container {
 
             .logo-wrapper{
-                max-width: em(186);
-                height: em(32);
                 img {
-                    width: 100%;
+                    width: em(186);
+                    height: em(32);
+                    @media only screen and (max-width: 767px){
+                        width: em(127);
+                        height: em(22);
+                    }
                 }
             }
         }
@@ -63,7 +69,12 @@ header{
                 }
             }
         }
-
+        .menu-btn-container {
+            display: none;
+            // @media only screen and (max-width: 991px){
+            //     display: block;
+            // }
+        }
     }
 }
 
