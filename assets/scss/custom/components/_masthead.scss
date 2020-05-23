@@ -1,0 +1,35 @@
+.section--masthead-container {
+    width: 100%;
+    min-height: calc(100vh - 6em);
+    height: auto;
+    .masthead-wrapper {
+        .masthead-bgStyle {
+            @include bgSettings(cover , no-repeat, center);
+            width: 100%;
+            height: em(300);
+            margin-bottom: em(62);
+        }
+        .masthead-content-container {
+            width: 100%;
+            .masthead-content-wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                .header-wrapper {
+                    width: em(498);
+                }
+                .content-wrapper {
+                    
+                    width: em(590);
+                    p{
+                        padding-bottom: em(50);
+                        &:last-child {
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

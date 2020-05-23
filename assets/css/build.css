@@ -537,6 +537,9 @@ body {
   padding: 0;
 }
 
+.section {
+  padding: 3.3333333333em 6.3888888889em;
+}
 h1 {
   color: #002240;
   font-size: 3.2222222222em;
@@ -696,5 +699,40 @@ header .header-wrapper .menu-container .menu-wrapper .btn-login-container button
 }
 header .header-wrapper .menu-btn-container {
   display: none;
+}
+
+.section--masthead-container {
+  width: 100%;
+  min-height: calc(100vh - 6em);
+  height: auto;
+}
+.section--masthead-container .masthead-wrapper .masthead-bgStyle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 16.6666666667em;
+  margin-bottom: 3.4444444444em;
+}
+.section--masthead-container .masthead-wrapper .masthead-content-container {
+  width: 100%;
+}
+.section--masthead-container .masthead-wrapper .masthead-content-container .masthead-content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.section--masthead-container .masthead-wrapper .masthead-content-container .masthead-content-wrapper .header-wrapper {
+  width: 27.6666666667em;
+}
+.section--masthead-container .masthead-wrapper .masthead-content-container .masthead-content-wrapper .content-wrapper {
+  width: 32.7777777778em;
+}
+.section--masthead-container .masthead-wrapper .masthead-content-container .masthead-content-wrapper .content-wrapper p {
+  padding-bottom: 2.7777777778em;
+}
+.section--masthead-container .masthead-wrapper .masthead-content-container .masthead-content-wrapper .content-wrapper p:last-child {
+  padding-bottom: 0;
 }
 /*# sourceMappingURL=build.css.map */
