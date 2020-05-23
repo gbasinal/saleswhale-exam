@@ -1,0 +1,28 @@
+.btn {
+    border-radius: em(5);
+    line-height: 1;
+    padding: em(9) em(30);
+    outline: none;
+    border: 1px solid $lblue;
+    cursor: pointer;
+    transition: .3s all;
+    &:focus {
+        outline: none;
+    }   
+    &--transparent {
+        background-color: transparent;
+        color: $lblue;
+        &:hover {
+            background-color: $lblue;
+            color: $white;   
+        }
+    }
+    &--blue {
+        background-color: $lblue;
+        color: $white;
+        &:hover {
+            background-color: transparent;
+            color: $lblue;
+        }
+    }
+}
