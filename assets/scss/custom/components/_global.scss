@@ -8,7 +8,7 @@ body {
     font-size: 1.250vw;
     
     margin: 0;
-    @media only screen and (max-width: 1024px){
+    @media only screen and (max-width: 991px){
         font-size: 18px;
     }
 }
@@ -19,5 +19,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
+    padding: 0;
 }
 

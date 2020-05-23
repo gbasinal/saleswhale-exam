@@ -2,11 +2,13 @@ header{
     width: 100%;
     .header-wrapper {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         padding: em(35) em(115);
         width: 100%;
         align-items: center;
+        @media only screen and (max-width: 991px){
+            padding: em(26) em(70);
+        }
         .logo-container {
 
             .logo-wrapper{
@@ -17,34 +19,51 @@ header{
                 }
             }
         }
-        .nav-container {
-            .nav-wrapper{
-                ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    width: 100%;
-                    li {
-                        list-style: none;
-                        margin-right: em(50);
-                        &:hover {
-                            text-decoration: underline;
+        .menu-container {
+            width: 100%;
+            padding-left: em(225);
+            .menu-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                .nav-container {
+                    @media only screen and (max-width: 991px){
+                        display: none;
+                    }
+                    .nav-wrapper{
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            width: 100%;
+                            li {
+                                list-style: none;
+                                margin-right: em(50);
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                                &:last-child(){
+                                    margin-right: 0;
+                                }
+                            }
                         }
-                        &:last-child(){
+                    }
+                }
+                .btn-login-container{
+                    @media only screen and (max-width: 991px){
+                        display: none;
+                    }
+                    button {
+                        margin-right: em(13);
+                        &:last-child {
                             margin-right: 0;
                         }
                     }
                 }
             }
         }
-        .btn-login-container{
-            button {
-                margin-right: em(13);
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-        }
+
     }
 }
 
