@@ -399,7 +399,105 @@ b, strong {
   font-weight: bold;
 }
 
+body {
+  font-size: 1.25vw;
+  background-color: #000;
+  margin: 0;
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 * {
   outline: none !important;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  color: #0688FA;
+  font-size: 3.2222222222em;
+  letter-spacing: 0em;
+  line-height: 1.0689655172;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h2 {
+  color: #0688FA;
+  font-size: 3.2222222222em;
+  letter-spacing: 0em;
+  line-height: 1.0689655172;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  color: #0688FA;
+  font-size: 1.7777777778em;
+  letter-spacing: 0em;
+  line-height: 1.0625;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h4 {
+  color: #0688FA;
+  font-size: 1.4444444444em;
+  letter-spacing: 0em;
+  line-height: 1.3076923077;
+  font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+h5 {
+  color: #0688FA;
+  font-size: 1.1666666667em;
+  letter-spacing: 0em;
+  line-height: 1.8095238095;
+  font-weight: normal;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+h6 {
+  color: #0688FA;
+  font-size: 1.1666666667em;
+  letter-spacing: 0em;
+  line-height: 1.619047619;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+p {
+  color: #0688FA;
+  font-size: 1em;
+  letter-spacing: 0em;
+  line-height: 1.7777777778;
+  font-weight: normal;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+button {
+  color: #0688FA;
+  font-size: 1em;
+  letter-spacing: 0em;
+  line-height: 1.2777777778;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+button {
+  color: #0688FA;
+  font-size: 1em;
+  letter-spacing: 0em;
+  line-height: 1.2777777778;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
 }
 /*# sourceMappingURL=build.css.map */
