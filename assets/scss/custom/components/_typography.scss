@@ -11,6 +11,12 @@ h2 {
     @include textStyle($black ,58, 0, 62, bold );
     font-family: $font;
     letter-spacing: -0.01em;
+    @media only screen and (max-width: 991px){
+        font-size: 32px;
+    }
+    @media only screen and (max-width: 767px){
+        @include textStyle($black ,28, 0, 31, bold );
+    }
 }
 
 h3 {
@@ -28,16 +34,32 @@ h5 {
     @include textStyle($black ,21, 0, 38, normal );
     font-family: $font;
     letter-spacing: 0.01em;
+    @media only screen and (max-width: 991px){
+        
+        @include textStyle($black ,16, 0, 24, normal );
+    }
+
 }
 
 h6 {
     @include textStyle($black ,21, 0, 34, bold );
     font-family: $font;
+    @media only screen and (max-width: 991px){
+        @include textStyle($black ,16, 0, 24, bold );
+    }
+ 
 }
 
 p {
     @include textStyle($black ,18, 0, 32, normal );
     font-family: $font;
+    @media only screen and (max-width: 991px){
+        font-size: 16px;
+    }
+
+    @media only screen and (max-width: 767px){
+        @include textStyle($black ,16, 0, 24, normal );
+    }
 }
 
 a {
@@ -49,6 +71,10 @@ a {
 button {
     @include textStyle($lblue ,18, 0, 23, bold );
     font-family: $font;
+
+    @media only screen and (max-width: 991px) {
+        @include textStyle($lblue ,16, 0, 21, bold );
+    }
 }
 
 

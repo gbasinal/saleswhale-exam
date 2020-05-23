@@ -9,6 +9,9 @@
     &:focus {
         outline: none;
     }   
+    @media only screen and (max-width: 991px){
+        padding: 12px 22px;
+    }
     &--transparent {
         background-color: transparent;
         color: $lblue;
