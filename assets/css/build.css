@@ -395,6 +395,35 @@ h3 {
     page-break-after: avoid;
   }
 }
+.btn {
+  border-radius: 0.2777777778em;
+  line-height: 1;
+  padding: 0.5em 1.6666666667em;
+  outline: none;
+  border: 1px solid #0688FA;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.btn:focus {
+  outline: none;
+}
+.btn--transparent {
+  background-color: transparent;
+  color: #0688FA;
+}
+.btn--transparent:hover {
+  background-color: #0688FA;
+  color: #ffffff;
+}
+.btn--blue {
+  background-color: #0688FA;
+  color: #ffffff;
+}
+.btn--blue:hover {
+  background-color: transparent;
+  color: #0688FA;
+}
+
 b, strong {
   font-weight: bold;
 }
@@ -534,6 +563,12 @@ header .header-wrapper .nav-container .nav-wrapper ul li:hover {
   text-decoration: underline;
 }
 header .header-wrapper .nav-container .nav-wrapper ul li:last-child() {
+  margin-right: 0;
+}
+header .header-wrapper .btn-login-container button {
+  margin-right: 0.7222222222em;
+}
+header .header-wrapper .btn-login-container button:last-child {
   margin-right: 0;
 }
 /*# sourceMappingURL=build.css.map */

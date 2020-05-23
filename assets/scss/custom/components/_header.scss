@@ -38,7 +38,12 @@ header{
             }
         }
         .btn-login-container{
-
+            button {
+                margin-right: em(13);
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
         }
     }
 }
