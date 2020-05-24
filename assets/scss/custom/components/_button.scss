@@ -15,6 +15,14 @@
     &--transparent {
         background-color: transparent;
         color: $lblue;
+        &.white {
+            color: $white;
+            border: 1px solid $white;
+            &:hover{
+                background-color: $white;
+                color: $white;
+            }
+        }
         &:hover {
             background-color: $lblue;
             color: $white;   
@@ -26,6 +34,15 @@
         &:hover {
             background-color: transparent;
             color: $lblue;
+        }
+    }
+    &--white {
+        background-color: $white;
+        color: $white;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        &:hover {
+            background-color: transparent;
+            color: $white;
         }
     }
 }
