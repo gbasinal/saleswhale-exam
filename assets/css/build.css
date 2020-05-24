@@ -659,6 +659,11 @@ body {
   }
 }
 
+.animated .animated-child {
+  transform: translateY(-25px);
+  opacity: 0;
+}
+
 h1 {
   color: #002240;
   font-size: 3.2222222222em;
