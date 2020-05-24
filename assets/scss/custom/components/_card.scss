@@ -1,0 +1,137 @@
+.section--card-container {
+    .card-wrapper {
+        .card-item-container{
+            width: 100%;
+            position: relative;
+            .bgStyle-card {
+                @include bgSettings(cover, no-repeat, center);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .card-item-wrapper{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                .card-item{
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: em(528);
+                    height: em(283);
+                    background: #FFFFFF;
+                    border: 1px solid #E5E5E5;
+                    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+                    border-radius: 5px;
+                    margin-right: em(80);
+                    @media only screen and (max-width: 991px){
+                        width: em(271);
+                        height: em(199);
+                        margin-right: em(54);
+                        &:nth-child(2n) {
+                            margin-right: 0;
+                        }
+                    }
+                    @media only screen and (max-width: 767px){
+                        width: 100%;
+                        height: em(199);
+                        margin-right: 0;
+                        margin-bottom: em(37);
+                    }
+                    &:nth-child(2n) {
+                        margin-right: 0;
+                    }
+                    .profile-wrapper{
+           
+                        img {
+                            width: em(80);
+                            height: em(80);
+                            border-radius: 50%;
+                            @media only screen and (max-width: 991px){
+                                width: em(56);
+                                height: em(56);
+                            }
+                        }
+                        .logoStyle {
+                            @include bgSettings(cover, no-repeat, center);
+                            width: 100%;
+                        }
+                    }
+                    .content-wrapper {
+                        p{
+                            margin-top: em(5);
+                            &:last-child {
+                                margin-top:0;
+                            }
+                        }
+                    }
+                }
+                &--investors {
+                    margin-bottom: em(-134);
+                    .card-item {
+                        margin-bottom: em(67);
+                        @media only screen and (max-width: 991px){
+                            height: em(145);
+                            margin-bottom: em(49);
+                        }
+                        @media only screen and (max-width: 767px){
+                            margin-bottom: em(40);
+                        }
+                        .profile-wrapper {
+                            
+                            .yc-logo{
+                                width: em(358);
+                                height: em(101);
+                                @media only screen and (max-width: 991px){
+                                    width: em(220);
+                                    height: em(62);
+                                }
+                            }
+                            
+                            .monk-logo{
+                                width: em(275);
+                                height: em(137);
+                                @media only screen and (max-width: 991px){
+                                    width: em(172);
+                                    height: em(86);
+                                }
+                            }
+                            
+                            .strive-logo{
+                                width: em(226);
+                                height: em(55);
+                                @media only screen and (max-width: 991px){
+                                    width: em(160);
+                                    height: em(39);
+                                }
+                            }
+                            
+                            .wavemaker-logo{
+                                width: em(304);
+                                height: em(140);
+                                @media only screen and (max-width: 991px){
+                                    width: em(187);
+                                    height: em(86);
+                                }
+                            }                            
+                            img{
+                                border-radius: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section-header-wrapper {
+
+    }
+}

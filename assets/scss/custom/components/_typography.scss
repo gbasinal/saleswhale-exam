@@ -22,6 +22,10 @@ h2 {
 h3 {
     @include textStyle($black ,32, 0, 34, bold );
     font-family: $font;
+    @media only screen and (max-width: 991px){
+        
+        @include textStyle($black ,26, 0, 34, bold );
+    }
 }
 
 h4 {
