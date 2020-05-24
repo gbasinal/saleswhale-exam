@@ -56,7 +56,7 @@ body {
     }
     &--card-container {
         padding-top: em(79);
-        padding-bottom: em(113);
+        padding-bottom: em(130);
     }
     &--masthead-btn-container {
         padding-top: em(31);
@@ -86,8 +86,10 @@ body {
 .section-header-wrapper {
     margin-bottom: em(64);
     text-align: center;
+    position: relative;
     &--investors {
         margin-top: em(183);
+        z-index: 9;
         @media only screen and (max-width: 991px){
             margin-top: em(112);
         }
@@ -97,3 +99,10 @@ body {
     }
 }
 
+
+.animated {
+    .animated-child {
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+}

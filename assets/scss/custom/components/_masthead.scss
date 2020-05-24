@@ -81,6 +81,7 @@
         height: em(392);
         flex-direction: column;
         border-radius: 5px;
+
         @media only screen and (max-width: 991px){
             height: em(215);
         }
