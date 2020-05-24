@@ -3,13 +3,34 @@
         display: flex;
         justify-content: center;
         width: 100%;
+
+        @media only screen and (max-width: 991px){
+            margin-bottom: em(50);
+        }
+        @media only screen and (max-width: 767px){
+            flex-direction: column;
+        }
         .footer-logo-wrapper {
             img {
                 width: em(193);
                 height: em(33);
+                @media only screen and (max-width: 991px){
+                    width: em(103);
+                    height: em(17);
+                }
+                @media only screen and (max-width: 767px){
+                    width: em(127);
+                    height: em(22);
+                }
             }
             margin-right: em(160);
-            // @media only screen and (max)
+            @media only screen and (max-width: 991px){
+                margin-right: em(80);
+            }
+            @media only screen and (max-width: 767px){
+                margin-right: 0;
+                margin-bottom: em(34);
+            }
         }
         .footer-menu-wrapper{
             display: flex;
@@ -25,11 +46,41 @@
                     margin-right: 0;
                     width: 25%;
                 }
+                @media only screen and (max-width: 991px){
+                    margin-right: 0;
+                    width: 45%;
+                    margin-bottom: em(25);
+                    &:nth-child(2n){
+                        margin-right: 0;
+                    }
+                    &:nth-child(3){
+                        margin-right: 0;
+                        margin-bottom: 0;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                        width: 45%;
+                        margin-bottom: 0;
+                    }
+                }
+                @media only screen and (max-width: 767px){
+                    width: 50%;
+                    &:last-child {
+                        
+                        width: 50%;
+                        
+                    }
+                }
                 .menu-header {
                     margin-bottom: em(10);
                     display: inline-block;
                     &.address {
                         margin-top: em(10);
+                    }
+                }
+                a{
+                    @media only screen and (max-width: 767px){
+                        @include textStyle($black ,16, 0, 32, bold );
                     }
                 }
                 ul {
@@ -41,6 +92,9 @@
                         }
                         a{
                             font-weight: normal;
+                            @media only screen and (max-width: 767px){
+                                @include textStyle($black ,16, 0, 32, normal );
+                            }
                         }
                     }
                 }
