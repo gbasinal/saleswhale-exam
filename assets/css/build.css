@@ -1067,6 +1067,9 @@ header .header-wrapper .menu-btn-container {
     height: 14.4444444444em;
   }
 }
+.section--footer-container .terms-container .terms-wrapper .terms-content-wrapper {
+  width: 100%;
+}
 @media only screen and (max-width: 767px) {
   .section--footer-container .terms-container .terms-wrapper .terms-content-wrapper {
     text-align: center;
@@ -1606,6 +1609,11 @@ header .header-wrapper .menu-btn-container {
 @media only screen and (max-width: 991px) {
   .section--card-container .card-wrapper .card-item-container .card-item-wrapper .animated:nth-child(2n) .card-item {
     margin-right: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section--card-container .card-wrapper .card-item-container .card-item-wrapper .animated {
+    width: 100%;
   }
 }
 .section--card-container .card-wrapper .card-item-container .card-item-wrapper .card-item {
