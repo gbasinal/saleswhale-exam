@@ -1,2 +1,80 @@
-header{}
+header{
+    width: 100%;
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: em(35) em(115);
+        width: 100%;
+        align-items: center;
+        @media only screen and (max-width: 991px){
+            padding: em(26) em(70);
+        }
+        @media only screen and (max-width: 767px){
+            padding: em(18) em(26);
+        }
+        .logo-container {
+
+            .logo-wrapper{
+                img {
+                    width: em(186);
+                    height: em(32);
+                    @media only screen and (max-width: 767px){
+                        width: em(127);
+                        height: em(22);
+                    }
+                }
+            }
+        }
+        .menu-container {
+            width: 100%;
+            padding-left: em(225);
+            .menu-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                .nav-container {
+                    @media only screen and (max-width: 991px){
+                        display: none;
+                    }
+                    .nav-wrapper{
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            width: 100%;
+                            li {
+                                list-style: none;
+                                margin-right: em(50);
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                                &:last-child(){
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .btn-login-container{
+                    @media only screen and (max-width: 991px){
+                        display: none;
+                    }
+                    button {
+                        margin-right: em(13);
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .menu-btn-container {
+            display: none;
+            // @media only screen and (max-width: 991px){
+            //     display: block;
+            // }
+        }
+    }
+}
 

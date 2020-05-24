@@ -4,6 +4,96 @@ b, strong {
     font-weight:bold;
 }
 
+body {
+    font-size: 1.250vw;
+    
+    margin: 0;
+    @media only screen and (max-width: 991px){
+        font-size: 18px;
+    }
+}
+
 * {
     outline: none !important;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
 }
+
+.section {
+    padding: em(60) em(115);
+    @media only screen and (max-width: 991px){
+        padding: em(26) em(70);
+    }
+    @media only screen and (max-width: 767px){
+        padding: em(18) em(26);
+    }
+    &--masthead-container {
+        @media only screen and (max-width: 991px){
+            padding-bottom: em(57);
+        }
+    }
+    &--culture-container {
+        padding-top: em(80);
+        padding-bottom: em(70);
+        @media only screen and (max-width: 991px){
+            padding-bottom: em(50);
+            padding-top: em(50);
+        }
+        @media only screen and (max-width: 767px){
+            padding-bottom: em(25);
+            padding-top: em(40);
+        }
+    }
+    &--progress-container {
+        padding-top: em(64);
+        padding-bottom: em(77);
+        @media only screen and (max-width: 767px){
+            padding: em(33) 0 0;
+        }
+    }
+    &--card-container {
+        padding-top: em(79);
+        padding-bottom: em(113);
+    }
+    &--masthead-btn-container {
+        padding-top: em(31);
+        padding-bottom: em(39);
+        @media only screen and (max-width: 991px){
+            padding-top: em(21);
+            padding-bottom: em(21);
+        }
+        @media only screen and (max-width: 767px){
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    &--footer-container{
+        padding-left: em(92);
+        padding-right: em(99);
+        padding-top: em(87);
+        @media only screen and (max-width: 991px){
+            padding-top: em(51);
+        }
+        @media only screen and (max-width: 767px){
+            padding : em(36) em(26);
+        }
+    }
+}
+
+.section-header-wrapper {
+    margin-bottom: em(64);
+    text-align: center;
+    &--investors {
+        margin-top: em(183);
+        @media only screen and (max-width: 991px){
+            margin-top: em(112);
+        }
+        @media only screen and (max-width: 767px){
+            margin-top: em(91);
+        }
+    }
+}
+

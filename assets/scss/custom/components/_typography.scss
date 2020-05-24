@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+$font : 'Source Sans Pro', sans-serif;
+
+
+h1 {
+    @include textStyle($black ,58, 0, 62, bold );
+    font-family: $font;
+}
+
+h2 {
+    @include textStyle($black ,58, 0, 62, bold );
+    font-family: $font;
+    letter-spacing: -0.01em;
+    @media only screen and (max-width: 991px){
+        font-size: 32px;
+    }
+    @media only screen and (max-width: 767px){
+        @include textStyle($black ,28, 0, 31, bold );
+    }
+}
+
+h3 {
+    @include textStyle($black ,32, 0, 34, bold );
+    font-family: $font;
+    @media only screen and (max-width: 991px){
+        
+        @include textStyle($black ,26, 0, 34, bold );
+    }
+}
+
+h4 {
+    @include textStyle($black ,26, 0, 34, 600 );
+    font-family: $font;
+    letter-spacing: -0.01em;
+}
+
+h5 {
+    @include textStyle($black ,21, 0, 38, normal );
+    font-family: $font;
+    letter-spacing: 0.01em;
+    @media only screen and (max-width: 991px){
+        
+        @include textStyle($black ,16, 0, 24, normal );
+    }
+
+}
+
+h6 {
+    @include textStyle($black ,21, 0, 34, bold );
+    font-family: $font;
+    @media only screen and (max-width: 991px){
+        @include textStyle($black ,16, 0, 24, bold );
+    }
+ 
+}
+
+p,li {
+    @include textStyle($black ,18, 0, 32, normal );
+    font-family: $font;
+    @media only screen and (max-width: 991px){
+        font-size: 16px;
+    }
+
+    @media only screen and (max-width: 767px){
+        @include textStyle($black ,16, 0, 24, normal );
+    }
+}
+
+a {
+    @include textStyle($black ,18, 0, 23, bold );
+    font-family: $font;
+    text-decoration: none;
+}
+
+button {
+    @include textStyle($lblue ,18, 0, 23, bold );
+    font-family: $font;
+
+    @media only screen and (max-width: 991px) {
+        @include textStyle($lblue ,16, 0, 21, bold );
+    }
+}
+
+
+
+
+
+
+
+
+
