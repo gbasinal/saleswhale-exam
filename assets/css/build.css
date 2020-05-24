@@ -605,7 +605,7 @@ body {
 }
 .section--card-container {
   padding-top: 4.3888888889em;
-  padding-bottom: 6.2777777778em;
+  padding-bottom: 7.2222222222em;
 }
 .section--masthead-btn-container {
   padding-top: 1.7222222222em;
@@ -657,6 +657,11 @@ body {
   .section-header-wrapper--investors {
     margin-top: 5.0555555556em;
   }
+}
+
+.animated .animated-child {
+  transform: translateY(-25px);
+  opacity: 0;
 }
 
 h1 {
@@ -1594,6 +1599,14 @@ header .header-wrapper .menu-btn-container {
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
+}
+.section--card-container .card-wrapper .card-item-container .card-item-wrapper .animated:nth-child(2n) .card-item {
+  margin-right: 0;
+}
+@media only screen and (max-width: 991px) {
+  .section--card-container .card-wrapper .card-item-container .card-item-wrapper .animated:nth-child(2n) .card-item {
+    margin-right: 0;
+  }
 }
 .section--card-container .card-wrapper .card-item-container .card-item-wrapper .card-item {
   text-align: center;
