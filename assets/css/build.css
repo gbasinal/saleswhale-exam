@@ -576,6 +576,20 @@ body {
     padding-top: 2.2222222222em;
   }
 }
+.section--progress-container {
+  padding-top: 3.5555555556em;
+  padding-bottom: 4.2777777778em;
+}
+@media only screen and (max-width: 767px) {
+  .section--progress-container {
+    padding: 1.8333333333em 0 0;
+  }
+}
+
+.section-header-wrapper {
+  margin-bottom: 3.5555555556em;
+  text-align: center;
+}
 
 h1 {
   color: #002240;
@@ -1020,6 +1034,95 @@ header .header-wrapper .menu-btn-container {
 @media only screen and (max-width: 767px) {
   .section--culture-container .culture-wrapper .btn-join-container button {
     width: 100%;
+  }
+}
+
+.section--progress-container {
+  width: 100%;
+}
+.section--progress-container .progress-wrapper {
+  width: 100%;
+}
+.section--progress-container .progress-wrapper .timeline-container {
+  background-color: #EFF8FF;
+  padding: 5.5555555556em 6.6666666667em 6.8888888889em;
+  position: relative;
+}
+@media only screen and (max-width: 991px) {
+  .section--progress-container .progress-wrapper .timeline-container {
+    padding-top: 3.7222222222em;
+    padding-bottom: 3.7222222222em;
+    padding-left: 6.7777777778em;
+    padding-right: 3.0555555556em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section--progress-container .progress-wrapper .timeline-container {
+    padding-left: 1.1111111111em;
+    padding-right: 1.1111111111em;
+  }
+}
+.section--progress-container .progress-wrapper .timeline-container .timeline-wrapper {
+  z-index: 2;
+  position: relative;
+}
+.section--progress-container .progress-wrapper .timeline-container .timeline-wrapper .item {
+  margin-bottom: 3.6111111111em;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.section--progress-container .progress-wrapper .timeline-container .timeline-wrapper .item:last-child {
+  margin-bottom: 0;
+}
+.section--progress-container .progress-wrapper .timeline-container .timeline-wrapper .item h6 {
+  display: flex;
+  align-items: center;
+}
+.section--progress-container .progress-wrapper .timeline-container .timeline-wrapper .item h6 .year {
+  margin-right: 1.731em;
+  color: #0688FA;
+  display: block;
+}
+@media only screen and (max-width: 991px) {
+  .section--progress-container .progress-wrapper .timeline-container .timeline-wrapper .item h6 .year {
+    margin-right: 1em;
+  }
+}
+.section--progress-container .progress-wrapper .timeline-container .timeline-wrapper .item h6 img {
+  width: 3.077em;
+  height: 3.077em;
+  border-radius: 50%;
+  margin-right: 1.731em;
+  display: block;
+}
+@media only screen and (max-width: 991px) {
+  .section--progress-container .progress-wrapper .timeline-container .timeline-wrapper .item h6 img {
+    margin-right: 0.813em;
+    width: 3.5em;
+    height: 3.5em;
+  }
+}
+.section--progress-container .progress-wrapper .timeline-container .timeline-wrapper .item h6 .event {
+  display: block;
+}
+.section--progress-container .progress-wrapper .timeline-container .divider {
+  width: 0.1666666667em;
+  background-color: #0688FA;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  left: 12.8888888889em;
+}
+@media only screen and (max-width: 991px) {
+  .section--progress-container .progress-wrapper .timeline-container .divider {
+    left: 11em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section--progress-container .progress-wrapper .timeline-container .divider {
+    left: 5.3333333333em;
   }
 }
 /*# sourceMappingURL=build.css.map */

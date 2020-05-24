@@ -47,5 +47,17 @@ body {
             padding-top: em(40);
         }
     }
+    &--progress-container {
+        padding-top: em(64);
+        padding-bottom: em(77);
+        @media only screen and (max-width: 767px){
+            padding: em(33) 0 0;
+        }
+    }
+}
+
+.section-header-wrapper {
+    margin-bottom: em(64);
+    text-align: center;
 }
 
