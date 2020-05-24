@@ -1,0 +1,85 @@
+.section--card-container {
+    .card-wrapper {
+        .card-item-container{
+            width: 100%;
+            .card-item-wrapper{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                .card-item{
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: em(528);
+                    height: em(283);
+                    background: #FFFFFF;
+                    border: 1px solid #E5E5E5;
+                    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+                    border-radius: 5px;
+                    margin-right: em(80);
+                    &:nth-child(2n) {
+                        margin-right: 0;
+                    }
+                    .profile-wrapper{
+                        img {
+                            width: em(80);
+                            height: em(80);
+                            border-radius: 50%;
+    
+                        }
+                        .logoStyle {
+                            @include bgSettings(cover, no-repeat, center);
+                            width: 100%;
+                        }
+                    }
+                    .content-wrapper {
+                        p{
+                            margin-top: em(5);
+                            &:last-child {
+                                margin-top:0;
+                            }
+                        }
+                    }
+                }
+                &--investors {
+                    margin-bottom: em(-134);
+                    .card-item {
+                        margin-bottom: em(67);
+                        .profile-wrapper {
+                            
+                            .yc-logo{
+                                width: em(358);
+                                height: em(101);
+                            }
+                            
+                            .monk-logo{
+                                width: em(275);
+                                height: em(137);
+                            }
+                            
+                            .strive-logo{
+                                width: em(226);
+                                height: em(55);
+                            }
+                            
+                            .wavemaker-logo{
+                                width: em(304);
+                                height: em(140);
+                            }                            
+                            img{
+                                border-radius: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section-header-wrapper {
+
+    }
+}

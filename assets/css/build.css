@@ -585,10 +585,17 @@ body {
     padding: 1.8333333333em 0 0;
   }
 }
+.section--card-container {
+  padding-top: 4.3888888889em;
+  padding-bottom: 6.2777777778em;
+}
 
 .section-header-wrapper {
   margin-bottom: 3.5555555556em;
   text-align: center;
+}
+.section-header-wrapper--investors {
+  margin-top: 10.1666666667em;
 }
 
 h1 {
@@ -1124,5 +1131,74 @@ header .header-wrapper .menu-btn-container {
   .section--progress-container .progress-wrapper .timeline-container .divider {
     left: 5.3333333333em;
   }
+}
+
+.section--card-container .card-wrapper .card-item-container {
+  width: 100%;
+}
+.section--card-container .card-wrapper .card-item-container .card-item-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.section--card-container .card-wrapper .card-item-container .card-item-wrapper .card-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 29.3333333333em;
+  height: 15.7222222222em;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  margin-right: 4.4444444444em;
+}
+.section--card-container .card-wrapper .card-item-container .card-item-wrapper .card-item:nth-child(2n) {
+  margin-right: 0;
+}
+.section--card-container .card-wrapper .card-item-container .card-item-wrapper .card-item .profile-wrapper img {
+  width: 4.4444444444em;
+  height: 4.4444444444em;
+  border-radius: 50%;
+}
+.section--card-container .card-wrapper .card-item-container .card-item-wrapper .card-item .profile-wrapper .logoStyle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+.section--card-container .card-wrapper .card-item-container .card-item-wrapper .card-item .content-wrapper p {
+  margin-top: 0.2777777778em;
+}
+.section--card-container .card-wrapper .card-item-container .card-item-wrapper .card-item .content-wrapper p:last-child {
+  margin-top: 0;
+}
+.section--card-container .card-wrapper .card-item-container .card-item-wrapper--investors {
+  margin-bottom: -7.4444444444em;
+}
+.section--card-container .card-wrapper .card-item-container .card-item-wrapper--investors .card-item {
+  margin-bottom: 3.7222222222em;
+}
+.section--card-container .card-wrapper .card-item-container .card-item-wrapper--investors .card-item .profile-wrapper .yc-logo {
+  width: 19.8888888889em;
+  height: 5.6111111111em;
+}
+.section--card-container .card-wrapper .card-item-container .card-item-wrapper--investors .card-item .profile-wrapper .monk-logo {
+  width: 15.2777777778em;
+  height: 7.6111111111em;
+}
+.section--card-container .card-wrapper .card-item-container .card-item-wrapper--investors .card-item .profile-wrapper .strive-logo {
+  width: 12.5555555556em;
+  height: 3.0555555556em;
+}
+.section--card-container .card-wrapper .card-item-container .card-item-wrapper--investors .card-item .profile-wrapper .wavemaker-logo {
+  width: 16.8888888889em;
+  height: 7.7777777778em;
+}
+.section--card-container .card-wrapper .card-item-container .card-item-wrapper--investors .card-item .profile-wrapper img {
+  border-radius: 0;
 }
 /*# sourceMappingURL=build.css.map */

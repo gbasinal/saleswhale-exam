@@ -54,10 +54,17 @@ body {
             padding: em(33) 0 0;
         }
     }
+    &--card-container {
+        padding-top: em(79);
+        padding-bottom: em(113);
+    }
 }
 
 .section-header-wrapper {
     margin-bottom: em(64);
     text-align: center;
+    &--investors {
+        margin-top: em(183);
+    }
 }
 
