@@ -107,6 +107,16 @@
             display: flex;
             justify-content: space-between;
             height: em(300);
+            @media only screen and (max-width: 991px){
+                height: em(233);
+                padding-top : em(45);
+            }
+            @media only screen and (max-width: 767px){
+                padding-top: em(39);
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+                align-items: center;
+            }
             .terms-bgSTyle {
                 @include bgSettings(cover, no-repeat, center);
                 position: absolute;
@@ -116,6 +126,12 @@
                 left: 0;
                 width: 100%;
                 height: em(150);
+                @media only screen and (max-width: 991px){
+                    height: em(88);
+                }
+                @media only screen and (max-width:767px ){
+                    height: em(76);
+                }
             }
             .bgOverlay {
                 background-color: #f4f4f4;
@@ -125,15 +141,39 @@
                 left: 0;
                 height: em(360);
                 z-index: -1;
+                @media only screen and (max-width: 991px){
+                    height: em(260);
+                    
+                }
             }
             .terms-content-wrapper {
+                @media only screen and (max-width: 767px){
+                    text-align: center;
+                }
                 .terms {
                     margin-bottom: em(25);
+                    @media only screen and (max-width: 767px){
+                        margin-bottom: em(0);
+                    }
                     a{
                      margin-right: em(15);
                      &:last-child {
                          margin-right: 0;
-                     }   
+                     }  
+                     @media only screen and (max-width: 991px){
+                        @include textStyle($black ,16, 0, 24, bold );
+                     } 
+                     @media only screen and (max-width : 767px){
+                         display: block;
+                         margin-right: 0;
+                     }
+                    }
+                }
+                .copywrite-wrapper{
+                    @media only screen and (max-width: 767px){
+                        p{
+                            @include textStyle($black ,14, 0, 32, normal );
+                        }
                     }
                 }
             }
@@ -142,13 +182,24 @@
                     display: flex;
                     width: 100%;
                     justify-content: space-between;
+                    @media only screen and (max-width: 767px){
+                        justify-content: center;
+                        margin-bottom: em(20);
+                    }
                     a{
                         img {
                             width: em(40);
                             height: em(40);
                             border-radius: 50%;
+                            @media only screen and (max-width: 991px){
+                                width: em(28);
+                                height: em(28);
+                             } 
                         }
                         margin-right: em(27);
+                        @media only screen and (max-width: 991px){
+                            margin-right: em(20);
+                         } 
                         &:last-child {
                             margin-right: 0;
                         }
