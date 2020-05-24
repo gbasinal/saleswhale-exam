@@ -1,17 +1,42 @@
 .section--card-container {
+    position: relative;
     .card-wrapper {
         .card-item-container{
             width: 100%;
-            position: relative;
+            
             .bgStyle-card {
                 @include bgSettings(cover, no-repeat, center);
                 position: absolute;
                 top: 0;
-                bottom: 0;
+                
                 left: 0;
                 right: 0;
                 width: 100%;
-                height: 100%;
+                height: em(387);
+                margin-top: em(208);
+                @media only screen and (max-width: 991px) {
+                    height: em(320);
+                    margin-top: em(149);
+                }
+                @media only screen and (max-width: 767px){
+                    height: em(660);
+                    margin-top: em(45);
+                }
+                &.investor {
+                    height: em(491);
+                    margin-top: 0;
+                    top: em(595);
+                    @media only screen and (max-width: 991px) {
+                        height: em(271);
+                        top: em(465);
+                        margin-top: 0;
+                    }
+                    @media only screen and (max-width: 767px) {
+                        height: em(220);
+                        top: em(700);
+                        margin-top: 0;
+                    }
+                }
             }
             .card-item-wrapper{
                 display: flex;
@@ -31,6 +56,7 @@
                     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
                     border-radius: 5px;
                     margin-right: em(80);
+                    position: relative;
                     @media only screen and (max-width: 991px){
                         width: em(271);
                         height: em(199);

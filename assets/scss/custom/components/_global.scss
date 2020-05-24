@@ -86,8 +86,10 @@ body {
 .section-header-wrapper {
     margin-bottom: em(64);
     text-align: center;
+    position: relative;
     &--investors {
         margin-top: em(183);
+        z-index: 9;
         @media only screen and (max-width: 991px){
             margin-top: em(112);
         }
