@@ -58,6 +58,18 @@ body {
         padding-top: em(79);
         padding-bottom: em(113);
     }
+    &--masthead-btn-container {
+        padding-top: em(31);
+        padding-bottom: em(39);
+        @media only screen and (max-width: 991px){
+            padding-top: em(21);
+            padding-bottom: em(21);
+        }
+        @media only screen and (max-width: 767px){
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
 }
 
 .section-header-wrapper {

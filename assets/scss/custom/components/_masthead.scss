@@ -66,3 +66,69 @@
         }
     }
 }
+
+
+///This is for masthead at bottom part
+
+
+.section--masthead-btn-container {
+    .masthead-btn-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: $dblue;
+        height: em(392);
+        flex-direction: column;
+        border-radius: 5px;
+        @media only screen and (max-width: 991px){
+            height: em(215);
+        }
+        @media only screen and (max-width: 767px){
+            padding : em(64) em(24);
+            height: em(377);
+        }
+        .header-wrapper {
+            margin-bottom: em(20);
+            @media only screen and (max-width: 991px){
+                margin-bottom: em(15);
+            }
+            h2 {
+                @include textStyle($white ,48, 0, 58, bold );
+                @media only screen and (max-width: 991px){
+                    @include textStyle($white ,28, 0, 34, bold );
+                }
+            }
+        }
+        .btn-masthead-wrapper {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            @media only screen and (max-width: 767px){
+                flex-direction: column;
+                width: 100%;
+            }
+            button {
+                margin-right: em(29);
+                padding: em(22) em(74);
+                @media only screen and (max-width: 991px){
+                    padding: em(12) em(22);
+                    margin-right: em(14);
+                }
+                @media only screen and (max-width: 767px){
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: em(21);
+                    padding-top: em(16);
+                    padding-bottom: em(16);
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

@@ -422,7 +422,7 @@ h3 {
 }
 .btn--transparent.white:hover {
   background-color: #ffffff;
-  color: #ffffff;
+  color: #002240;
 }
 .btn--transparent:hover {
   background-color: #0688FA;
@@ -438,12 +438,13 @@ h3 {
 }
 .btn--white {
   background-color: #ffffff;
-  color: #ffffff;
+  color: #002240;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 .btn--white:hover {
   background-color: transparent;
   color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .hamburger {
@@ -605,6 +606,22 @@ body {
 .section--card-container {
   padding-top: 4.3888888889em;
   padding-bottom: 6.2777777778em;
+}
+.section--masthead-btn-container {
+  padding-top: 1.7222222222em;
+  padding-bottom: 2.1666666667em;
+}
+@media only screen and (max-width: 991px) {
+  .section--masthead-btn-container {
+    padding-top: 1.1666666667em;
+    padding-bottom: 1.1666666667em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section--masthead-btn-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .section-header-wrapper {
@@ -933,6 +950,88 @@ header .header-wrapper .menu-btn-container {
   .section--masthead-container .masthead-wrapper .masthead-content-container .masthead-content-wrapper .content-wrapper p:last-child {
     padding-bottom: 0;
   }
+}
+
+.section--masthead-btn-container .masthead-btn-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #329DFA;
+  height: 21.7777777778em;
+  flex-direction: column;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 991px) {
+  .section--masthead-btn-container .masthead-btn-wrapper {
+    height: 11.9444444444em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section--masthead-btn-container .masthead-btn-wrapper {
+    padding: 3.5555555556em 1.3333333333em;
+    height: 20.9444444444em;
+  }
+}
+.section--masthead-btn-container .masthead-btn-wrapper .header-wrapper {
+  margin-bottom: 1.1111111111em;
+}
+@media only screen and (max-width: 991px) {
+  .section--masthead-btn-container .masthead-btn-wrapper .header-wrapper {
+    margin-bottom: 0.8333333333em;
+  }
+}
+.section--masthead-btn-container .masthead-btn-wrapper .header-wrapper h2 {
+  color: #ffffff;
+  font-size: 2.6666666667em;
+  letter-spacing: 0em;
+  line-height: 1.2083333333;
+  font-weight: bold;
+}
+@media only screen and (max-width: 991px) {
+  .section--masthead-btn-container .masthead-btn-wrapper .header-wrapper h2 {
+    color: #ffffff;
+    font-size: 1.5555555556em;
+    letter-spacing: 0em;
+    line-height: 1.2142857143;
+    font-weight: bold;
+  }
+}
+.section--masthead-btn-container .masthead-btn-wrapper .btn-masthead-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+@media only screen and (max-width: 767px) {
+  .section--masthead-btn-container .masthead-btn-wrapper .btn-masthead-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.section--masthead-btn-container .masthead-btn-wrapper .btn-masthead-wrapper button {
+  margin-right: 1.6111111111em;
+  padding: 1.2222222222em 4.1111111111em;
+}
+@media only screen and (max-width: 991px) {
+  .section--masthead-btn-container .masthead-btn-wrapper .btn-masthead-wrapper button {
+    padding: 0.6666666667em 1.2222222222em;
+    margin-right: 0.7777777778em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section--masthead-btn-container .masthead-btn-wrapper .btn-masthead-wrapper button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.1666666667em;
+    padding-top: 0.8888888889em;
+    padding-bottom: 0.8888888889em;
+  }
+  .section--masthead-btn-container .masthead-btn-wrapper .btn-masthead-wrapper button:last-child {
+    margin-bottom: 0;
+  }
+}
+.section--masthead-btn-container .masthead-btn-wrapper .btn-masthead-wrapper button:last-child {
+  margin-right: 0;
 }
 
 .section--culture-container {
