@@ -1154,6 +1154,19 @@ header .header-wrapper .menu-btn-container {
 
 .section--card-container .card-wrapper .card-item-container {
   width: 100%;
+  position: relative;
+}
+.section--card-container .card-wrapper .card-item-container .bgStyle-card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 .section--card-container .card-wrapper .card-item-container .card-item-wrapper {
   display: flex;

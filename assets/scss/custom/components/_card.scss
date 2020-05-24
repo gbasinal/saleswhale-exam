@@ -2,6 +2,17 @@
     .card-wrapper {
         .card-item-container{
             width: 100%;
+            position: relative;
+            .bgStyle-card {
+                @include bgSettings(cover, no-repeat, center);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+            }
             .card-item-wrapper{
                 display: flex;
                 width: 100%;
