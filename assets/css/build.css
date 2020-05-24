@@ -1611,6 +1611,11 @@ header .header-wrapper .menu-btn-container {
     margin-right: 0;
   }
 }
+@media only screen and (max-width: 767px) {
+  .section--card-container .card-wrapper .card-item-container .card-item-wrapper .animated {
+    width: 100%;
+  }
+}
 .section--card-container .card-wrapper .card-item-container .card-item-wrapper .card-item {
   text-align: center;
   display: flex;
