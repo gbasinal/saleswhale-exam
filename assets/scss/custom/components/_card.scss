@@ -43,6 +43,24 @@
                 width: 100%;
                 justify-content: center;
                 flex-wrap: wrap;
+                .animated {
+                    
+                        &:nth-child(2n) {
+                            .card-item{
+                                margin-right: 0;
+                            }
+                            
+                        }
+                        @media only screen and (max-width: 991px){
+                            &:nth-child(2n) {
+                                .card-item{
+                                    margin-right: 0;
+                                }
+                                
+                            }
+                        }
+                    
+                }
                 .card-item{
                     text-align: center;
                     display: flex;
