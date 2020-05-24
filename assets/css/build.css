@@ -623,6 +623,11 @@ body {
     padding-right: 0;
   }
 }
+.section--footer-container {
+  padding-left: 5.1111111111em;
+  padding-right: 5.5em;
+  padding-top: 4.8333333333em;
+}
 
 .section-header-wrapper {
   margin-bottom: 3.5555555556em;
@@ -740,7 +745,7 @@ h6 {
   }
 }
 
-p {
+p, li {
   color: #002240;
   font-size: 1em;
   letter-spacing: 0em;
@@ -749,12 +754,12 @@ p {
   font-family: "Source Sans Pro", sans-serif;
 }
 @media only screen and (max-width: 991px) {
-  p {
+  p, li {
     font-size: 16px;
   }
 }
 @media only screen and (max-width: 767px) {
-  p {
+  p, li {
     color: #002240;
     font-size: 0.8888888889em;
     letter-spacing: 0em;
@@ -865,6 +870,52 @@ header .header-wrapper .menu-container .menu-wrapper .btn-login-container button
 }
 header .header-wrapper .menu-btn-container {
   display: none;
+}
+
+.section--footer-container .footer-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.section--footer-container .footer-wrapper .footer-logo-wrapper {
+  margin-right: 8.8888888889em;
+}
+.section--footer-container .footer-wrapper .footer-logo-wrapper img {
+  width: 10.7222222222em;
+  height: 1.8333333333em;
+}
+.section--footer-container .footer-wrapper .footer-menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section--footer-container .footer-wrapper .footer-menu-wrapper .menu-item {
+  margin-right: 1.8333333333em;
+  width: calc(25% - 1.53em);
+}
+.section--footer-container .footer-wrapper .footer-menu-wrapper .menu-item:nth-child(3) {
+  margin-right: 0;
+}
+.section--footer-container .footer-wrapper .footer-menu-wrapper .menu-item:last-child {
+  margin-right: 0;
+  width: 25%;
+}
+.section--footer-container .footer-wrapper .footer-menu-wrapper .menu-item .menu-header {
+  margin-bottom: 0.5555555556em;
+  display: inline-block;
+}
+.section--footer-container .footer-wrapper .footer-menu-wrapper .menu-item .menu-header.address {
+  margin-top: 0.5555555556em;
+}
+.section--footer-container .footer-wrapper .footer-menu-wrapper .menu-item ul li {
+  list-style-type: none;
+  margin-bottom: 0.2777777778em;
+}
+.section--footer-container .footer-wrapper .footer-menu-wrapper .menu-item ul li:last-child {
+  margin-bottom: 0;
+}
+.section--footer-container .footer-wrapper .footer-menu-wrapper .menu-item ul li a {
+  font-weight: normal;
 }
 
 .section--masthead-container {

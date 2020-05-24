@@ -54,7 +54,7 @@ h6 {
  
 }
 
-p {
+p,li {
     @include textStyle($black ,18, 0, 32, normal );
     font-family: $font;
     @media only screen and (max-width: 991px){
